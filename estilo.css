@@ -1,0 +1,323 @@
+header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+body{
+    background-color: #121212;
+    color: #eee;
+}
+.ed-menu a{
+    color: #ffffff;
+}
+.ed-menu a:hover {
+    background: #12066e;
+    color: rgb(1, 130, 3);
+    transition: all 0.5s ease;
+}
+
+.contacto {
+    margin-top: 2em;
+    padding: 2em;
+    background: #12066e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+h1, h2{
+    color: #fff;
+}
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    border: 1px solid #12066e;
+    background: #000000;
+    color: #fff;
+    padding: 0.75em;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.contacto input::placeholder,
+.contacto textarea::placeholder {
+    color: #999999;
+}
+
+.enviar {
+    background: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 2.5;
+    font-weight: bold;
+    padding: 0.75em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.enviar:hover {
+    background: rgb(1, 130, 3);
+    color:  #12066e; 
+    font-weight: bold;
+}
+
+.sig {
+    background: #12066e;
+    color: #fafafa;
+    float: left;
+    border-radius: 20px;
+    margin-left: 6vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+footer {
+    background: #222;
+    text-align: center;
+    font-size: .9em;
+    font-weight: bold;
+    color: #eee;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-top: 4em;
+}
+
+.web-vertical {
+    float: left;
+    text-align: center;
+    background: #12066e;
+    font-size: smaller;
+}
+.modal-title{
+    color: #eee;
+}
+
+.modalito .modal-content {
+    background-color: #000;
+    color: #fff;
+}
+
+.modalito .cerrar {
+    background-color: #12066e;
+    color: #fff;
+}
+
+#logito{
+    width: 3dvw;
+    height: 6dvh;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev, .next {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+/* Estilos para tablet */
+@media (max-width: 768px) { 
+.web-vertical {
+    float: left;
+    text-align: center;
+    background: #12066e;
+    font-size: smaller;
+}
+.ed-menu a{
+    color: #ffffff;
+}
+.ed-menu a:hover {
+    background: #12066e;
+    color: rgb(1, 130, 3);
+    transition: all 0.5s ease;
+}
+    .ed-menu.web-horizontal {
+        display: block; 
+        width: 100%;
+      
+    }
+
+    .ed-menu.web-horizontal > li {
+        display: block; 
+        position: relative;
+        width: 100%; 
+    }
+
+    .ed-menu.web-horizontal ul {
+        display: block; 
+        padding: 0;
+        margin: 0; 
+        background-color: #000000; 
+        position: relative;
+        width: 100%; 
+    }
+    .ed-menu.web-horizontal ul:hover {
+        display: block; 
+        padding: 0;
+        margin: 0; 
+        background: rgb(1, 130, 3);
+    color:  #12066e; 
+        position: relative;
+        width: 100%; 
+    }
+
+    .ed-menu.web-horizontal li:focus-within > ul,
+    .ed-menu.web-horizontal li:hover > ul {
+        display: block;
+    }
+
+    .ed-menu.web-vertical {
+        display: block; 
+        position: static;
+    }
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #imagen {
+        height: 5vh;
+        width: 15vw;
+    }
+
+    aside.ed-item {
+        display: flex; 
+        width: 100%;
+        margin-top: 20px;
+        float: inline-start;
+        margin-left: 20dvw;
+    }
+
+    aside.ed-item h2 {
+        display: flex;  
+        margin-top: 2px; 
+        margin-bottom: 10px; 
+        width: 100%;
+    }
+
+    aside.ed-item a {
+        display: flex; 
+        margin-top: 2px;
+        margin-bottom: 10px;
+        float: inline-start;
+        margin-left: 20dvw;
+    }
+
+    #logito{
+        height: 8vh;
+        width: 8vw;
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    .web-vertical {
+        float: left;
+        text-align: center;
+        background: #12066e;
+        font-size: smaller;
+    }
+    .ed-menu a{
+        color: #ffffff;
+    }
+    .ed-menu a:hover {
+        background: #12066e;
+        color: rgb(1, 130, 3);
+        transition: all 0.5s ease;
+    }
+        .ed-menu.web-horizontal {
+            display: block; 
+            width: 100%;
+          
+        }
+    
+    header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+   
+    #imagen {
+        height: 4vh;
+        width: 20vw;
+    }
+
+    
+    aside.ed-item {
+        display: flex; 
+        width: 100%;
+        margin-top: 20px;
+        float: inline-start;
+        margin-left: 20dvw;
+    }
+
+    aside.ed-item h2 {
+        display: flex;  
+        margin-top: 2px; 
+        margin-bottom: 10px; 
+        width: 100%;
+    }
+
+    aside.ed-item a {
+        display: flex; 
+        margin-top: 2px;
+        margin-bottom: 10px;
+        float: inline-start;
+        margin-left: 20dvw;
+    }
+
+    #logito{
+        height: 8vh;
+        width: 8vw;
+    }
+
+    aside.ed-item {
+        margin-top: 10px; 
+    }
+
+    aside.ed-item h2 {
+        font-size: 1em; 
+    }
+
+    .sig {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}

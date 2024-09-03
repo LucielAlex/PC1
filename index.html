@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Calificada I</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/edgrid.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="ed-container">
+        <div class="ed-item web-20">
+            <a href="/"><img id="imagen" src="img/logo.png"></a>
+        </div>
+        <div class="ed-item web-80">
+            <nav>
+                <ul class="ed-menu web-horizontal web-main-end">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Servicios</a>
+                        <ul class="ed-menu web-vertical">
+                            <li><a href="noticia.html">Noticias</a></li>
+                            <li><a href="analisis.html">Analisis</a></li>
+                            <li><a href="guias.html">Guias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner" class="ed-container">
+        <div class="ed-item">
+            <div id="banner" class="ed-container">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide fade">
+                            <img src="img/inicio.jpg" alt="Inicio 1">
+                        </div>
+                        <div class="slide fade">
+                            <img src="img/inicio2.jpg" alt="Inicio 2">
+                        </div>
+                        <div class="slide fade">
+                            <img src="img/inicio3.jpg" alt="Inicio 3">
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="ed-container">
+        <main class="ed-item web-75">
+            <h1>Bienvenidos a GTech</h1>
+             <p>Explora lo último en innovación tecnológica. En GTech, 
+                nos dedicamos a ofrecerte las noticias más recientes, análisis 
+                detallados y guías sobre el mundo de la tecnología.</p>
+             <p>Desde inteligencia artificial hasta avances en dispositivos móviles,
+                 nuestra misión es mantenerte informado sobre cómo la tecnología está 
+                 transformando el futuro. Únete a nuestra comunidad y mantente al día 
+                 con las tendencias que están redefiniendo el mundo.</p>
+
+        </main>
+        <aside class="ed-item web-25"><br>
+            <div>
+                <h2>Siguenos en Facebok</h2>
+                <a href="http://facebook.com" target="_blank" class="sig"><img id="logito" src="img/face.png" alt=""></a><br>
+                <h2>Siguenos en Instagram</h2>
+                <a href="http://instagram.com" target="_blank" class="sig"><img id="logito" src="img/inst.png" alt=""></a>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="ed-container">
+            <div class="ed-item">
+                <p>Practica Calificada I</p>
+                <p>Diseñando por Karla Castilla</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+        setInterval(function() {
+            plusSlides(1);
+        }, 5000); 
+        </script>
+        
+</body>
+</html>

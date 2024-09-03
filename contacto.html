@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Calificada I</title>
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/edgrid.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="ed-container">
+        <div class="ed-item web-20">
+            <a href="/"><img id="imagen" src="img/logo.png"></a>
+        </div>
+        <div class="ed-item web-80">
+            <nav>
+                <ul class="ed-menu web-horizontal web-main-end">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Servicios</a>
+                        <ul class="ed-menu web-vertical">
+                            <li><a href="noticia.html">Noticias</a></li>
+                            <li><a href="analisis.html">Analisis</a></li>
+                            <li><a href="guias.html">Guias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner" class="ed-container">
+        <div class="ed-item">
+            <img src="img/contacto.jpg" alt="inicio">
+        </div>
+    </div>
+
+    <div class="ed-container">
+        <main class="ed-item web-75">
+            <br>
+            <h1>Contacto</h1>
+            Para cualquier consulta o sugerencia, favor de contactarnos
+            <form action="#" class="ed-container contacto">
+                <div class="ed-item web-70">
+                    <input type="text" placeholder="Nombres">
+                </div>
+                <div class="ed-item web-70">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="ed-item web-70">
+                    <textarea name="mensaje" cols="30" rows="10"
+                    placeholder="Escriba su mensaje por favor"></textarea>
+                </div>
+                <div class="ed-item web-40">
+                    <input type="button" class="enviar" value="Enviar Comentario" class="btn btn-primary">
+                </div>
+            </form>
+            <div class="modalito">
+                <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitle">Datos enviados correctamente!</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Datos enviados de manera exitosa.</p>
+                                <img src="https://i.gifer.com/36Tr.gif" alt="GIF de éxito" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn cerrar" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="ed-item web-25"><br>
+            <div>
+                <h2>Siguenos en Facebok</h2>
+                <a href="http://facebook.com" target="_blank" class="sig"><img id="logito" src="img/face.png" alt=""></a><br>
+                <h2>Siguenos en Instagram</h2>
+                <a href="http://instagram.com" target="_blank" class="sig"><img id="logito" src="img/inst.png" alt=""></a>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="ed-container">
+            <div class="ed-item">
+                <p>Practica Calificada I</p>
+                <p>Diseñando por Karla Castilla</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelector('.enviar').addEventListener('click', function() {
+            $('#successModal').modal('show');
+        });
+    </script>
+</body>
+</html>
